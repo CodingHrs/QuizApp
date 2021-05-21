@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <script type="text/javascript" src="script.js"></script> -->
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <style type="text/css">
+      ul {
+        list-style: none;
+        margin: 0 0 20px 0;
+        padding: 0;
+      }
+      ul li {
+        margin-top: 10px;
+      }
+      ul li label,
+      ul li input {
+        cursor: pointer;
+      }
+      #lottie, #quizContainer{
+          margin: 0 auto;
+          font-weight: bold;
+          text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <lottie-player id="lottie" src="https://assets9.lottiefiles.com/packages/lf20_lSNubv.json"  background="transparent"  speed="1"  style="width: 500px; height: 500px;"  loop  autoplay></lottie-player>
+    <div id="quizContainer">
+      <h2 id="question"></h2>
+      <ul>
+        <li>
+          <input type="radio" name="answer" id="a" />
+          <label id="a_text" for="a"></label>
+        </li>
+        <li>
+          <input type="radio" name="answer" id="b" />
+          <label id="b_text" for="b"></label>
+        </li>
+        <li>
+          <input type="radio" name="answer" id="c" />
+          <label id="c_text" for="c"></label>
+        </li>
+        <li>
+          <input type="radio" name="answer" id="d" />
+          <label id="d_text" for="d"></label>
+        </li>
+      </ul>
+      <button id="btn">Submit</button>
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script type="text/javascript" src="questionBank.js"></script>
+  </body>
+</html>
